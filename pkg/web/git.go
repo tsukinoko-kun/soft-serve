@@ -112,6 +112,8 @@ func GitController(_ context.Context, r *mux.Router) {
 		r.Handle(basePrefix+route.path, withParams(withAccess(route)))
 	}
 
+	r.Handle("/", browserIndex{})
+
 	// Handle go-get
 	r.Handle(basePrefix, withParams(withAccess(http.HandlerFunc(GoGetHandler)))).Methods(http.MethodGet)
 }
