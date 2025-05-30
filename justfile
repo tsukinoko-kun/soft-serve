@@ -1,0 +1,2 @@
+run:
+    SOFT_SERVE_INITIAL_ADMIN_KEYS='ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAID6gD9UQrffhuvGn9/gdnhZdplz3uZ8WKSO32HONPfOP' go run ./cmd/soft serve

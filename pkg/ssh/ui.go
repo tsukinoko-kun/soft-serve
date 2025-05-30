@@ -137,6 +137,7 @@ func (ui *UI) Init() tea.Cmd {
 	ui.pages[repoPage] = repo.New(ui.common,
 		repo.NewReadme(ui.common),
 		repo.NewFiles(ui.common),
+		repo.NewIssues(ui.common),
 		repo.NewLog(ui.common),
 		repo.NewRefs(ui.common, git.RefsHeads),
 		repo.NewRefs(ui.common, git.RefsTags),
